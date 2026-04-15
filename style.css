@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #020617;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Section */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Home */
+#home {
+  background: linear-gradient(to right, #1e293b, #0f172a);
+}
+
+button {
+  padding: 10px 20px;
+  background: #38bdf8;
+  border: none;
+  color: black;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* Services */
+.card {
+  background: #1e293b;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 250px;
+}
+
+/* Footer */
+footer {
+  background: #020617;
+  text-align: center;
+  padding: 15px;
+}
+
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #25D366;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+img {
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.wa-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
