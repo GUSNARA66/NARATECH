@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <meta charset="UTF-8">
   <title>NaraTech Service</title>
   <link rel="stylesheet" href="style.css">
@@ -20,27 +21,26 @@
 
   <!-- Home -->
   <section id="home">
-    <h1>Jasa Instalasi Jaringan & Service Komputer</h1>
+    <h1 id="typing"></h1>
     <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" width="300" alt="gambar jaringan">
     <p>Melayani pemasangan LAN, WiFi, dan perbaikan laptop/PC</p>
   </section>
 
   <!-- Services -->
-  <section id="services">
-    <h2>Layanan Kami</h2>
-    <div class="card">
-      <h3>Instalasi LAN</h3>
-      <p>Pemasangan kabel jaringan rapi & profesional</p>
-    </div>
-    <div class="card">
-      <h3>Setting Router</h3>
-      <p>Konfigurasi WiFi cepat & stabil</p>
-    </div>
-    <div class="card">
-      <h3>Service Laptop</h3>
-      <p>Perbaikan software & hardware</p>
-    </div>
-  </section>
+  <div class="card">
+  <h3><i class="fa-solid fa-network-wired"></i> Instalasi LAN</h3>
+  <p>Pemasangan kabel jaringan rapi & profesional</p>
+</div>
+
+<div class="card">
+  <h3><i class="fa-solid fa-wifi"></i> Setting Router</h3>
+  <p>Konfigurasi WiFi cepat & stabil</p>
+</div>
+
+<div class="card">
+  <h3><i class="fa-solid fa-laptop"></i> Service Laptop</h3>
+  <p>Perbaikan software & hardware</p>
+</div>
  
   <!-- About -->
   <section id="about">
@@ -70,6 +70,7 @@
   <footer>
   <p>© 2026 NaraTech Service</p>
   <p>Jasa Instalasi Jaringan & Service Komputer</p>
+  <button onclick="topFunction()" id="topBtn">↑</button>
 </footer>
 
   <script src="script.js"></script>
