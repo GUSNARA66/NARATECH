@@ -10,7 +10,9 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 15px 30px;
-  background: #020617;
+  background: rgba(2, 6, 23, 0.8);
+  position: sticky;
+  top: 0;
 }
 
 nav ul {
@@ -46,12 +48,14 @@ button {
 
 /* Services */
 .card {
-  background: #1e293b;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
   margin: 10px;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
   display: inline-block;
   width: 250px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
 /* Footer */
@@ -97,4 +101,58 @@ img {
 .card:hover {
   transform: scale(1.05);
   transition: 0.3s;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 26px;
+}
+#home {
+  background: linear-gradient(to right, #0f172a, #1e293b);
+}
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s;
+}
+h1 {
+  text-shadow: 0 0 10px #38bdf8;
+}
+button, a {
+  cursor: pointer;
+}
+#typing {
+  background: linear-gradient(90deg, #38bdf8, #22c55e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #38bdf8;
+  transition: 0.3s;
+}
+section h2 {
+  border-bottom: 2px solid #38bdf8;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+body {
+  background: linear-gradient(135deg, #020617, #0f172a, #1e293b);
+}
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px;
+  border: none;
+  background: #38bdf8;
+  border-radius: 50%;
+  cursor: pointer;
 }
