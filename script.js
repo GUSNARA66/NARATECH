@@ -1,28 +1,23 @@
-// ANIMASI SECTION
-function showOnLoad() {
-  let sections = document.querySelectorAll("section");
-  sections.forEach(sec => {
-    sec.classList.add("show");
+// ANIMASI MUNCUL SAAT SCROLL
+let elements = document.querySelectorAll(".fade-up");
+
+function showOnScroll() {
+  let screen = window.innerHeight;
+
+  elements.forEach(el => {
+    let position = el.getBoundingClientRect().top;
+
+    if (position < screen - 100) {
+      el.classList.add("show");
+    }
   });
 }
 
-showOnLoad();
-
-window.addEventListener("scroll", function() {
-  let sections = document.querySelectorAll("section");
-
-  sections.forEach(sec => {
-    let position = sec.getBoundingClientRect().top;
-    let screen = window.innerHeight;
-
-    if(position < screen - 100) {
-      sec.classList.add("show");
-    }
-  });
-});
+window.addEventListener("scroll", showOnScroll);
+showOnScroll();
 
 
-// 🔥 TYPING EFFECT (PISAH DARI SCROLL)
+// TYPEWRITER (JALAN SEKALI)
 const text = "Jasa Instalasi Jaringan & Service Komputer";
 let i = 0;
 
@@ -34,8 +29,4 @@ function typing() {
   }
 }
 
-// jalan sekali aja
-window.addEventListener("load", typing);
-function topFunction() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+window.onload = typing;
